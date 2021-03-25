@@ -23,11 +23,8 @@ Caprine is an unofficial and privacy-focused Facebook Messenger app with many us
 
 %prep
 %autosetup
-npm install --global node-gyp
-
 
 %build
-node-gyp -v; node -v; npm -v
 npm install
 node_modules/.bin/tsc
 node_modules/.bin/electron-builder --linux dir
