@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:           caprine
-Version:        2.52.2
+Version:        2.52.3
 Release:        1%{?dist}
 Summary:        Elegant Facebook Messenger desktop app
 
@@ -12,9 +12,7 @@ Source1:        %{name}.desktop
 
 BuildArch:      x86_64
 BuildRequires:  npm
-BuildRequires:  git-core
 BuildRequires:  nodejs >= 14.0.0
-BuildRequires:  nodejs-packaging
 Requires:       desktop-file-utils
 Requires:       gtk-update-icon-cache
 
@@ -44,6 +42,9 @@ done
 install -d %{buildroot}%{_datadir}/applications
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
+install -d %{buildroot}%{_datadir}/licenses/%{name}
+install -Dm644 license %{buildroot}%{_datadir}/licenses/%{name}
+
 %post
 /usr/bin/update-desktop-database
 /usr/bin/gtk-update-icon-cache
@@ -53,13 +54,15 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 /usr/bin/gtk-update-icon-cache
 
 %files
-%license license
-%doc readme.md
+%license %{_datadir}/licenses/%{name}/license
 %{_libdir}/%{name}/
 %{_bindir}/%{name}
 %{_datadir}/applications/caprine.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
-* Thu Mar 25 2021 dusansimic <dusna.simic1810@gmail.com> - 2.52.2-1
+* Fri Apr  9 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.3-1
+- Release 2.52.3
+- Some minor updates to spec file and adding license file to installation
+* Thu Mar 25 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.2-1
 - Release 2.52.2
