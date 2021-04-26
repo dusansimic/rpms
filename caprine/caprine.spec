@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:           caprine
-Version:        2.52.3
+Version:        2.52.4
 Release:        1%{?dist}
 Summary:        Elegant Facebook Messenger desktop app
 
@@ -13,8 +13,6 @@ Source1:        %{name}.desktop
 BuildArch:      x86_64
 BuildRequires:  npm
 BuildRequires:  nodejs >= 14.0.0
-Requires:       desktop-file-utils
-Requires:       gtk-update-icon-cache
 
 %description
 Caprine is an unofficial and privacy-focused Facebook Messenger app with many useful features.
@@ -61,6 +59,9 @@ install -Dm644 license %{buildroot}%{_datadir}/licenses/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
+* Mon Apr 26 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.4-1
+- Release 2.52.4
+- Removed dependency desktop-file-utils and gtk-update-icon-cache
 * Fri Apr  9 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.3-1
 - Release 2.52.3
 - Some minor updates to spec file and adding license file to installation
