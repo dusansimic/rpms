@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:           caprine
-Version:        2.52.4
+Version:        2.53.0
 Release:        1%{?dist}
 Summary:        Elegant Facebook Messenger desktop app
 
@@ -59,6 +59,8 @@ install -Dm644 license %{buildroot}%{_datadir}/licenses/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
+* Sat May  8 2021 dusansimic <dusan.simic1810@gmail.com> - 2.53.0-1
+- Release 2.53.0
 * Mon Apr 26 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.4-1
 - Release 2.52.4
 - Removed dependency desktop-file-utils and gtk-update-icon-cache
