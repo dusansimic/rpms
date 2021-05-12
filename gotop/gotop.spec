@@ -10,6 +10,7 @@ URL:            https://github.com/xxxserxxx/gotop
 Source0:        %{url}/archive/v%{version}.tar.gz
 
 BuildRequires:  go
+BuildRequires:  git
 Requires:       glibc
 
 %description
