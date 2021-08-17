@@ -1,7 +1,7 @@
 %global _version 1.0.0-alpha.2
 
 Name:           libadwaita
-Version:        1.0.0alpha.2
+Version:        1.0.0~alpha.2
 Release:        1%{?dist}
 Summary:        Building blocks for modern GNOME applications
 
@@ -69,5 +69,7 @@ developing applications that use %{name}.
 %{_docdir}/libadwaita-1/
 
 %changelog
+* Tue Aug 17 2021 dusansimic <dusan.simic1810@gmail.com> - 1.0.0~alpha.2-1
+	- Fix version number
 * Sat Aug 14 2021 dusansimic <dusan.simic1810@gmail.com> - 1.0.0alpha.2-1
 	- Release version 1.0.0-alpha.2
