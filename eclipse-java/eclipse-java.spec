@@ -8,7 +8,7 @@
 
 Name:           %{name}
 Version:        4.21
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        Highly extensible IDE (Java version)
 
 License:        EPL
@@ -48,7 +48,5 @@ done
 %{_datadir}/icons/hicolor/*/apps/eclipse.png
 
 %changelog
-* Thu Nov  4 2021 dusansimic <dusan.simic1810@gmail.com> - 4.21-2
-	- Fix Conflicts issue
 * Thu Nov  4 2021 dusansimic <dusan.simic1810@gmail.com> - 4.21-1
 	- Release 4.21
