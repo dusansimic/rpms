@@ -8,24 +8,24 @@
 
 Name:           %{name}
 Version:        4.21
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Highly extensible IDE (Enterprise Java and Web version)
 
-Provides:       eclipse
 License:        EPL
 URL:            https://www.eclipse.org
 Source0:        %{url}/downloads/download.php?file=/technology/epp/downloads/release/%{rel}/%{srcfilename}&r=1
 Source1:        eclipse.desktop
 
 BuildArch:      %{buildarch}
+Provides:       eclipse
 Requires:       java
+Conflicts:      eclipse
 
 %description
 Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others
 
 %prep
-cp %{_sourcedir}/1 %{_sourcedir}/%{srcfilename}
-tar xf %{_sourcedir}/%{srcfilename}
+tar xf %{_sourcedir}/1
 
 %install
 install -d %{buildroot}%{_libdir}
@@ -48,5 +48,7 @@ done
 %{_datadir}/icons/hicolor/*/apps/eclipse.png
 
 %changelog
+* Thu Nov  4 2021 dusansimic <dusan.simic1810@gmail.com> - 4.21-2
+	- Fix Conflicts issue
 * Thu Nov  4 2021 dusansimic <dusan.simic1810@gmail.com> - 4.21-1
 	- Release 4.21
