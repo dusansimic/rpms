@@ -1,12 +1,13 @@
+%define remotever 0.5.1
+
 Name:           svetovid-lib
-Version:        0.5.0
-Release:        3%{?dist}
+Version:        0.5.1
+Release:        1%{?dist}
 Summary:        Supplement Library for Introductory Programming Courses
 
 License:        Apache
 URL:            https://github.com/ivanpribela/svetovid-lib
-%global majmin %(echo %{version} | cut -d . -f -2)
-Source0:        https://github.com/ivanpribela/svetovid-lib/archive/refs/tags/v%{majmin}.tar.gz
+Source0:        https://github.com/ivanpribela/svetovid-lib/archive/refs/tags/v%{remotever}.tar.gz
 
 BuildArch:      noarch
 
@@ -19,7 +20,7 @@ Requires: javapackages-filesystem
 Supplement Library for Introductory Programming Courses
 
 %package javadoc
-Summary: Svetovid library documentation
+Summary: Documentation for %{name}
 
 BuildArch: noarch
 
@@ -27,10 +28,10 @@ BuildRequires:  ant
 Requires: javapackages-filesystem
 
 %description javadoc
-The Svetovid library documentation.
+%{summary}.
 
 %prep
-%autosetup -n %{name}-%{majmin}
+%autosetup -n %{name}-%{remotever}
 
 %build
 ant pack.jar
@@ -45,14 +46,17 @@ install -dm755 %{buildroot}%{_javadocdir}
 cp -a gendoc/api %{buildroot}%{_javadocdir}/%{name}
 
 %files
+%doc README.md
 %license LICENSE
 %license NOTICE
 %{_javadir}/%{name}.jar
 
 %files javadoc
-%{_javadocdir}/%{name}/
+%{_javadocdir}/%{name}
 
 %changelog
+* Fri Nov 12 2021 dusansimic <dusan.simic1810@gmail.com> - 0.5.1-1
+	- Release 0.5.1
 * Fri Aug 13 2021 dusansimic <dusan.simic1810@gmail.com> - 0.5.0-4
 	- Fix version for package
 	- Refactor install and files macro
