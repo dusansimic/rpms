@@ -2,7 +2,7 @@
 
 Name:           VirtualBox-extpack
 Version:        6.1.28
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        VirtualBox Extension Pack
 
 License:        PUEL
@@ -12,7 +12,7 @@ Source0:        https://download.virtualbox.org/virtualbox/%{pack_ver}/Oracle_VM
 
 BuildArch:      noarch
 
-Requires:       VirtualBox = %{version}
+Requires:       VirtualBox
 
 %description
 Oracle VM VirtualBox Extension Pack. Support for USB 2.0 and USB 3.0 devices, VirtualBox RDP, disk encryption, NVMe and PXE boot for Intel cards.
