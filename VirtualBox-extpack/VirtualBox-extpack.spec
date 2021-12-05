@@ -1,8 +1,8 @@
 %global pack_ver %{version}
 
 Name:           VirtualBox-extpack
-Version:        6.1.28
-Release:        2%{?dist}
+Version:        6.1.30
+Release:        1%{?dist}
 Summary:        VirtualBox Extension Pack
 
 License:        PUEL
@@ -31,5 +31,7 @@ cp -a tmp %{buildroot}%{_libdir}/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_
 %{_libdir}/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack
 
 %changelog
+* Mon Dec  6 2021 dusansimic <dusan.simic1810@gmail.com> - 6.1.30-1
+	- Release 6.1.30
 * Sat Nov 20 2021 dusansimic <dusan.simic1810@gmail.com> - 6.1.28-1
 	- Release 6.1.28
