@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:           caprine
-Version:        2.55.1
+Version:        2.55.2
 Release:        1%{?dist}
 Summary:        Elegant Facebook Messenger desktop app
 
@@ -56,6 +56,8 @@ install -Dm644 license %{buildroot}%{_datadir}/licenses/%{name}
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
+* Thu Dec  9 2021 dusansimic <dusan.simic1810@gmail.com> - 2.55.2-1
+	- Release 2.55.2
 * Thu Dec  2 2021 dusansimic <dusan.simic1810@gmail.com> - 2.55.1-1
 	- Release 2.55.1
 * Thu Oct 28 2021 dusansimic <dusan.simic1810@gmail.com> - 2.55.0-1
