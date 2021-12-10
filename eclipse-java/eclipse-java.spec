@@ -1,13 +1,13 @@
 %define name eclipse-java
 %define buildarch x86_64
-%define rel 2021-09/R
-%define reldash 2021-09-R
+%define rel 2021-12/R
+%define reldash 2021-12-R
 %define srcfilename %{name}-%{reldash}-linux-gtk-%{buildarch}.tar.gz
 
 %define _eclipsedir %{_libdir}/eclipse
 
 Name:           %{name}
-Version:        4.21
+Version:        4.22
 Release:        1%{?dist}
 Summary:        Highly extensible IDE (Java version)
 
@@ -48,5 +48,7 @@ done
 %{_datadir}/icons/hicolor/*/apps/eclipse.png
 
 %changelog
+* Fri Dec 10 2021 dusansimic <dusan.simic1810@gmail.com> - 4.22-1
+	- Release 4.22
 * Thu Nov  4 2021 dusansimic <dusan.simic1810@gmail.com> - 4.21-1
 	- Release 4.21
