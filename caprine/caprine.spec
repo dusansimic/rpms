@@ -10,7 +10,7 @@ URL:            https://sindresorhus.com/caprine/
 Source0:        https://github.com/sindresorhus/caprine/archive/refs/tags/v%{version}.tar.gz
 Source1:        %{name}.desktop
 
-BuildArch:      x86_64
+ExclusiveArch:  x86_64
 BuildRequires:  npm
 BuildRequires:  nodejs >= 16.0.0
 
@@ -69,22 +69,22 @@ install -Dm644 license %{buildroot}%{_datadir}/licenses/%{name}
 * Sun Mar 20 2022 dusansimic <dusan.simic1810@gmail.com> - 2.55.3-1
 - Release 2.55.3
 * Thu Dec  9 2021 dusansimic <dusan.simic1810@gmail.com> - 2.55.2-1
-	- Release 2.55.2
+- Release 2.55.2
 * Thu Dec  2 2021 dusansimic <dusan.simic1810@gmail.com> - 2.55.1-1
-	- Release 2.55.1
+- Release 2.55.1
 * Thu Oct 28 2021 dusansimic <dusan.simic1810@gmail.com> - 2.55.0-1
-	- Release 2.55.0
+- Release 2.55.0
 * Fri Aug 13 2021 dusansimic <dusan.simic1810@gmail.com> - 2.54.1-1
-	- Release 2.54.1
+- Release 2.54.1
 * Thu Jul 29 2021 dusansimic <dusan.simic1810@gmail.com> - 2.54.0-1
-	- Release 2.54.0
+- Release 2.54.0
 * Sat May  8 2021 dusansimic <dusan.simic1810@gmail.com> - 2.53.0-1
-	- Release 2.53.0
+- Release 2.53.0
 * Mon Apr 26 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.4-1
-	- Release 2.52.4
-	- Removed dependency desktop-file-utils and gtk-update-icon-cache
+- Release 2.52.4
+- Removed dependency desktop-file-utils and gtk-update-icon-cache
 * Fri Apr  9 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.3-1
-	- Release 2.52.3
-	- Some minor updates to spec file and adding license file to installation
+- Release 2.52.3
+- Some minor updates to spec file and adding license file to installation
 * Thu Mar 25 2021 dusansimic <dusan.simic1810@gmail.com> - 2.52.2-1
-	- Release 2.52.2
+- Release 2.52.2

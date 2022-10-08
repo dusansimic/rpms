@@ -56,15 +56,15 @@ cp -a gendoc/api %{buildroot}%{_javadocdir}/%{name}
 
 %changelog
 * Fri Nov 12 2021 dusansimic <dusan.simic1810@gmail.com> - 0.5.1-1
-	- Release 0.5.1
+- Release 0.5.1
 * Fri Aug 13 2021 dusansimic <dusan.simic1810@gmail.com> - 0.5.0-4
-	- Fix version for package
-	- Refactor install and files macro
+- Fix version for package
+- Refactor install and files macro
 * Fri Aug 13 2021 dusansimic <dusan.simic1810@gmail.com> - 0.5.0-3
-	- Fix install block so it follows packaging guidelines
+- Fix install block so it follows packaging guidelines
 * Tue Aug  3 2021 dusansimic <dusan.simic1810@gmail.com> - 0.5.0-2
-	- Use _javadir macro
-	- Link svetovid-lib.jar to svetovid-lib-version.jar
-	- Add javadoc package
+- Use _javadir macro
+- Link svetovid-lib.jar to svetovid-lib-version.jar
+- Add javadoc package
 * Wed Jun 16 2021 dusansimic <dusan.simic1810@gmail.com> - 0.5.0-1
-	- Release 0.5.0
+- Release 0.5.0
