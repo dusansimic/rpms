@@ -5,7 +5,7 @@
 %define exclusivearch x86_64
 %define rel 2022-09/R
 %define reldash 2022-09-R
-%define srcfilename %{name}-%{reldash}-linux-gtk-%{buildarch}.tar.gz
+%define srcfilename %{name}-%{reldash}-linux-gtk-%{exclusivearch}.tar.gz
 
 %define _eclipsedir %{_libdir}/eclipse
 
