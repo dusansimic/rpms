@@ -4,7 +4,7 @@
 %define __lowername %(echo %{__reponame} | tr '[:upper:]' '[:lower:]')
 
 Name:           %{__lowername}-icon-theme
-Version:        43.1.2
+Version:        43.2
 Release:        1%{?dist}
 Summary:        An Adwaita style extra icons theme for Gnome Shell
 
@@ -30,6 +30,8 @@ cp -r * %{buildroot}%{_datadir}/icons/%{__reponame}/
 %{_datadir}/icons/%{__reponame}/
 
 %changelog
+* Fri Dec  2 2022 Dušan Simić <dusan.simic1810@gmail.com> - 43.2-1
+- Bump to 43.2
 * Tue Nov  8 2022 Dušan Simić <dusan.simic1810@gmail.com> - 43.1.2-1
 - Bump to 43.1.2
 * Sat Oct 29 2022 Dušan Simić <dusan.simic1810@gmail.com> - 43.1.1-1
