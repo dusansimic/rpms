@@ -3,14 +3,14 @@
 
 %define name eclipse-java
 %define exclusivearch x86_64
-%define rel 2022-09/R
-%define reldash 2022-09-R
+%define rel 2022-12/R
+%define reldash 2022-12-R
 %define srcfilename %{name}-%{reldash}-linux-gtk-%{exclusivearch}.tar.gz
 
 %define _eclipsedir %{_libdir}/eclipse
 
 Name:           %{name}
-Version:        4.25
+Version:        4.26
 Release:        1%{?dist}
 Summary:        Highly extensible IDE (Java version)
 
@@ -53,6 +53,8 @@ done
 %{_datadir}/icons/hicolor/*/apps/eclipse.png
 
 %changelog
+* Mon Dec 26 2022 dusansimic <dusan.simic1810@gmail.com> - 4.26-1
+- Release 4.26
 * Mon Oct 10 2022 dusansimic <dusan.simic1810@gmail.com> - 4.25-1
 - Release 4.25
 * Mon Aug 15 2022 dusansimic <dusan.simic1810@gmail.com> - 4.24-1
