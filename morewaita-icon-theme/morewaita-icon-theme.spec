@@ -23,6 +23,7 @@ Requires:       adwaita-icon-theme
 %autosetup -n %{__reponame}-%{__urlver}
 
 %build
+rm -rf _dev/
 
 %install
 install -d %{buildroot}%{_datadir}/icons/%{__reponame}
