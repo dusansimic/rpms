@@ -3,7 +3,7 @@
 %define __reponame MoreWaita
 %define __lowername %(echo %{__reponame} | tr '[:upper:]' '[:lower:]')
 
-%define __urlver 44.2
+%define __urlver 45
 
 Name:           %{__lowername}-icon-theme
 Version:        %__urlver
@@ -33,6 +33,8 @@ cp -r * %{buildroot}%{_datadir}/icons/%{__reponame}/
 %{_datadir}/icons/%{__reponame}/
 
 %changelog
+* Sun Oct 15 2023 Dušan Simić <dusan.simic1810@gmail.com> - 45-1
+- Bump to 45
 * Wed Sep  6 2023 Dušan Simić <dusan.simic1810@gmail.com> - 44.2-1
 - Bump to 44.2
 * Mon May 15 2023 Dušan Simić <dusan.simic1810@gmail.com> - 44.1-1
