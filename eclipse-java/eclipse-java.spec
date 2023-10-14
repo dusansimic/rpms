@@ -57,6 +57,7 @@ find %{buildroot}%{_eclipsedir}/plugins/com.sun.jna_5.13.0.v20230812-1000/com/su
 %changelog
 * Sat Oct 14 2023 manojbaishya <28330014+manojbaishya@users.noreply.github.com> - 4.29-1
 - Release 4.29
+- Add cleanup command for removing directories for different platforms
 * Wed Mar 22 2023 dusansimic <dusan.simic1810@gmail.com> - 4.27-1
 - Release 4.27
 * Mon Dec 26 2022 dusansimic <dusan.simic1810@gmail.com> - 4.26-1
