@@ -3,14 +3,14 @@
 
 %define name eclipse-jee
 %define exclusivearch x86_64
-%define rel 2023-03/R
-%define reldash 2023-03-R
+%define rel 2023-09/R
+%define reldash 2023-09-R
 %define srcfilename %{name}-%{reldash}-linux-gtk-%{exclusivearch}.tar.gz
 
 %define _eclipsedir %{_libdir}/eclipse
 
 Name:           %{name}
-Version:        4.27
+Version:        4.29
 Release:        1%{?dist}
 Summary:        Highly extensible IDE (Enterprise Java and Web version)
 
@@ -53,6 +53,8 @@ done
 %{_datadir}/icons/hicolor/*/apps/eclipse.png
 
 %changelog
+* Sat Oct 14 2023 manojbaishya <28330014+manojbaishya@users.noreply.github.com> - 4.29-1
+- Release 4.29
 * Wed Mar 22 2023 dusansimic <dusan.simic1810@gmail.com> - 4.27-1
 - Release 4.27
 * Mon Dec 26 2022 dusansimic <dusan.simic1810@gmail.com> - 4.26-1
