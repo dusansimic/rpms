@@ -46,6 +46,8 @@ for i in 16 22 24 32 48 64 128 256 512 1024 ; do
   install -Dm644 eclipse/plugins/org.eclipse.platform_%{version}*/"eclipse$i.png" "%{buildroot}%{_datadir}/icons/hicolor/${i}x${i}/apps/eclipse.png"
 done
 
+find %{buildroot}%{_eclipsedir}/plugins/com.sun.jna_5.13.0.v20230812-1000/com/sun/jna -type d ! -iname '*linux-x86-64' ! -iname '*jna' | xargs rm -rf
+
 %files
 %{_eclipsedir}
 %{_bindir}/eclipse
@@ -55,6 +57,7 @@ done
 %changelog
 * Sat Oct 14 2023 manojbaishya <28330014+manojbaishya@users.noreply.github.com> - 4.29-1
 - Release 4.29
+- Add cleanup command for removing directories for different platforms
 * Wed Mar 22 2023 dusansimic <dusan.simic1810@gmail.com> - 4.27-1
 - Release 4.27
 * Mon Dec 26 2022 dusansimic <dusan.simic1810@gmail.com> - 4.26-1
