@@ -46,6 +46,8 @@ for i in 16 22 24 32 48 64 128 256 512 1024 ; do
   install -Dm644 eclipse/plugins/org.eclipse.platform_%{version}*/"eclipse$i.png" "%{buildroot}%{_datadir}/icons/hicolor/${i}x${i}/apps/eclipse.png"
 done
 
+find %{buildroot}%{_eclipsedir}/plugins/com.sun.jna_5.13.0.v20230812-1000/com/sun/jna -type d ! -iname '*linux-x86-64' ! -iname '*jna' | xargs rm -rf
+
 %files
 %{_eclipsedir}
 %{_bindir}/eclipse
