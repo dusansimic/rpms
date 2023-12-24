@@ -3,14 +3,14 @@
 
 %define name eclipse-java
 %define exclusivearch x86_64
-%define rel 2023-09/R
-%define reldash 2023-09-R
+%define rel 2023-12/R
+%define reldash 2023-12-R
 %define srcfilename %{name}-%{reldash}-linux-gtk-%{exclusivearch}.tar.gz
 
 %define _eclipsedir %{_libdir}/eclipse
 
 Name:           %{name}
-Version:        4.29
+Version:        4.30
 Release:        1%{?dist}
 Summary:        Highly extensible IDE (Java version)
 
@@ -55,6 +55,8 @@ find %{buildroot}%{_eclipsedir}/plugins/com.sun.jna_5.13.0.v20230812-1000/com/su
 %{_datadir}/icons/hicolor/*/apps/eclipse.png
 
 %changelog
+* Sat Oct 14 2023 manojbaishya <28330014+manojbaishya@users.noreply.github.com> - 4.30-1
+- Release 4.30
 * Sat Oct 14 2023 manojbaishya <28330014+manojbaishya@users.noreply.github.com> - 4.29-1
 - Release 4.29
 - Add cleanup command for removing directories for different platforms
