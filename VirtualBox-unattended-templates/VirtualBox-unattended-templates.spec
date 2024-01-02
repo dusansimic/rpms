@@ -1,7 +1,7 @@
 %global pack_ver %{version}
 
 Name:          VirtualBox-unattended-templates
-Version:       7.0.6
+Version:       7.0.12
 Release:       1%{?dist}
 Summary:       VirtualBox templates for unattended guest installation
 
@@ -32,5 +32,7 @@ cp -R tmp/VirtualBox-%{pack_ver}/src/VBox/Main/UnattendedTemplates %{buildroot}%
 %{_datadir}/virtualbox/UnattendedTemplates
 
 %changelog
+* Tue Jan  2 2024 dusansimic <dusan.simic1810@gmail.com> - 7.0.12-1
+- Release 7.0.12
 * Wed Mar 22 2023 dusansimic <dusan.simic1810@gmail.com> - 7.0.6-1
 - Release 7.0.6
