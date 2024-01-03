@@ -9,7 +9,7 @@
 Beautiful colored emoji font for personal use.
 }
 
-Version:        6.6.0
+Version:        8.0.0
 Release:        1%{?dist}
 
 URL:            https://www.joypixels.com/download
@@ -33,7 +33,9 @@ cp %{SOURCE2} LICENSE.appendix.pdf
 %fontfiles
 
 %changelog
+* Wed Jan  3 2024 dusansimic <dusan.simic1810@gmail.com> - 8.0.0-1
+- Release 8.0.0
 * Wed Jul 28 2021 dusansimic <dusan.simic1810@gmail.com> - 6.6.0-1
-	- Release 6.6.0
+- Release 6.6.0
 * Tue Apr  6 2021 dusansimic <dusan.simic1810@gmail.com> - 6.5.0-1
-	- Release 6.5.0
+- Release 6.5.0
