@@ -1,7 +1,7 @@
 %global pack_ver %{version}
 
 Name:           VirtualBox-extpack
-Version:        7.0.14
+Version:        7.0.18
 Release:        1%{?dist}
 Summary:        VirtualBox Extension Pack
 
@@ -12,7 +12,7 @@ Source0:        https://download.virtualbox.org/virtualbox/%{pack_ver}/Oracle_VM
 
 BuildArch:      noarch
 
-Requires:       VirtualBox
+Requires:       VirtualBox = %{pack_ver}
 
 %description
 Oracle VM VirtualBox Extension Pack. Support for USB 2.0 and USB 3.0 devices, VirtualBox RDP, disk encryption, NVMe and PXE boot for Intel cards.
@@ -33,6 +33,8 @@ cp -a tmp %{buildroot}%{_libdir}/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_
 %{_libdir}/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack
 
 %changelog
+* Sun Jun 16 2024 dusansimic <dusan.simic1810@gmail.com> - 7.0.18-1
+- Release 7.0.18
 * Wed Feb 28 2024 dusansimic <dusan.simic1810@gmail.com> - 7.0.14-1
 - Release 7.0.14
 * Tue Jan  2 2024 dusansimic <dusan.simic1810@gmail.com> - 7.0.12-1
