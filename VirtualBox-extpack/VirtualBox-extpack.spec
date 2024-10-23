@@ -8,7 +8,7 @@ Summary:        VirtualBox Extension Pack
 License:        PUEL
 URL:            https://www.virtualbox.org
 
-Source0:        https://download.virtualbox.org/virtualbox/%{pack_ver}/Oracle_VM_VirtualBox_Extension_Pack-%{pack_ver}.vbox-extpack
+Source0:        https://download.virtualbox.org/virtualbox/%{pack_ver}/Oracle_VirtualBox_Extension_Pack-%{pack_ver}.vbox-extpack
 
 BuildArch:      noarch
 
