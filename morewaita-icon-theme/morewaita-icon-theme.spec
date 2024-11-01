@@ -3,7 +3,7 @@
 %define __reponame MoreWaita
 %define __lowername %(echo %{__reponame} | tr '[:upper:]' '[:lower:]')
 
-%define __urlver 45
+%define __urlver 47.1
 
 Name:           %{__lowername}-icon-theme
 Version:        %__urlver
@@ -12,7 +12,7 @@ Summary:        An Adwaita style extra icons theme for Gnome Shell
 
 License:        GPL-3.0-or-later
 URL:            https://github.com/somepaulo/%{__reponame}
-Source0:        %{url}/archive/refs/tags/v%{__urlver}.tar.gz
+Source0:        %{url}/archive/refs/tags/%{__urlver}.tar.gz
 
 Requires:       adwaita-icon-theme
 
@@ -33,6 +33,8 @@ cp -r * %{buildroot}%{_datadir}/icons/%{__reponame}/
 %{_datadir}/icons/%{__reponame}/
 
 %changelog
+* Fri Nov  1 2024 Dušan Simić <dusan.simic1810@gmail.com> - 47.1-1
+- Bump to 47.1
 * Sun Oct 15 2023 Dušan Simić <dusan.simic1810@gmail.com> - 45-1
 - Bump to 45
 * Wed Sep  6 2023 Dušan Simić <dusan.simic1810@gmail.com> - 44.2-1
