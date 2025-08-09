@@ -12,7 +12,7 @@ Source0:       https://download.virtualbox.org/virtualbox/%{pack_ver}/VirtualBox
 
 BuildArch:     noarch
 
-Requires:      VirtualBox
+Requires:      VirtualBox = %{pack_ver}
 
 %description
 Oracle VM VirtualBox templates for unattended installation of guest operating systems.
