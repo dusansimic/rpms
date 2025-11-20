@@ -1,7 +1,7 @@
 %global pack_ver %{version}
 
 Name:           VirtualBox-extpack
-Version:        7.2.2
+Version:        7.2.4
 Release:        1%{?dist}
 Summary:        VirtualBox Extension Pack
 
@@ -33,6 +33,8 @@ cp -a tmp %{buildroot}%{_libdir}/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_
 %{_libdir}/virtualbox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack
 
 %changelog
+* Thu Nov 20 2025 dusansimic <dusan.simic1810@gmail.com> - 7.2.4-1
+- Release 7.2.4
 * Wed Nov  5 2025 dusansimic <dusan.simic1810@gmail.com> - 7.2.2-1
 - Release 7.2.2
 * Sat Aug 30 2025 dusansimic <dusan.simic1810@gmail.com> - 7.1.12-1
